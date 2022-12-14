@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+
+  scada:
+      image: tomcat:9.0-jdk8
+      volumes:
+        - scada:/usr/local/tomcat/webapps/
+        - ./ScadaBR.war:/usr/local/tomcat/webapps/ScadaBR.war
+      ports:
+        - '8082:8080'
+
+volumes:
+  scada:
+    external: true
+
+    
