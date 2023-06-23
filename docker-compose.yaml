@@ -12,5 +12,3 @@ services:
 volumes:
   scada:
     external: true
-
-    
