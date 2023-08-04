@@ -29,4 +29,4 @@ git add .
 
 git commit -m "New version: $version"
 
-git push origin master
+git push origin test
